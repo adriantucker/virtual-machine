@@ -78,10 +78,10 @@ function install_mininet() {
 
 function install_ryu() {
     #FIX: recent eventlet versions will cause the install to fail
-    pip install eventlet==0.30.2
-    pip install ryu==$RYU_VERSION
+    pip3 install eventlet==0.30.2
+    pip3 install ryu==$RYU_VERSION
     curl https://raw.githubusercontent.com/scc365/ryu-base-image/main/requirements.txt -o ./requirements.txt
-    pip install -r ./requirements.txt
+    pip3 install -r ./requirements.txt
 }
 
 function install_updater() {
